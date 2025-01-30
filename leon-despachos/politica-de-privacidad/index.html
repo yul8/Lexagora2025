@@ -5,10 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="Política de Privacidad de Centro de Negocios Lexagora. Protección de datos personales según RGPD.">
     <title>Política de Privacidad | Centro de Negocios Lexagora</title>
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="../favicon.png" type="image/png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+    <!--   Core CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/custom.css">
+
+    <!-- jQuery ( ) -->
+    <script src="../../js/assets/jquery.js"></script>
+
+
+
     <style>
+        /*
+    1) Use black & white brand logo
+    2) Add a bit of olive green (#708D23) for accent
+ */
+        :root {
+        }
+
+        /* Example: override some accent colors with olive green */
+        .highlighted.item .price,
+        .btn.btn-default:hover,
+        .menu,
+        .fa:hover {
+            background-color: var(--olive-green) !important;
+        }
+
+        /* Make sure brand logo is black & white */
+        header .brand img.light-brand,
+        header .brand img.dark-brand {
+            height: 130px; /* adjust as needed */
+            filter: grayscale(100%); /* optional to ensure B/W */
+        }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.8;
@@ -86,14 +118,85 @@
             margin: 20px 0;
             border-top: 2px solid #000;
         }
+        .bg-logo{
+            background-color: #fff;
+
+            padding: 1px;
+            border-radius: 50px;
+            /*margin-top: 10px;*/
+        }
+        .extra-padding{
+            padding-top: 20rem;
+        }
     </style>
 </head>
 <body>
-<header class="header">
-    <h1>Política de Privacidad</h1>
-</header>
 
-<div class="container">
+
+
+<div class="body-overlay"></div>
+
+<!-- ==========  NAV-CONTAINER / MOBILE MENU  ========== -->
+<div class="nav-container">
+    <ul class="nav">
+        <li><a href="../../index.html#galeria">Galería</a></li>
+        <li><a href="../../index.html#quienes-somos">Quiénes somos</a></li>
+        <li><a href="../../index.html#contacto">Contacto</a></li>
+    </ul>
+
+    <div class="copyright">
+        Lexagora León
+    </div>
+    <div class="exit"></div>
+
+    <!-- Social Icons (optional) -->
+    <ul class="social">
+        <li><a href="https://www.facebook.com/jusRG" target="_blank" class="fa fa-facebook"></a></li>
+        <li><a href="https://www.linkedin.com/in/lexagora-centro-de-negocios-39a934238/" target="_blank" class="fa fa-linkedin"></a></li>
+    </ul>
+</div>
+<!-- ========== END NAV ========== -->
+<!-- ========== WRAPPER ========== -->
+<!-- ========== HEADER ========== -->
+<header>
+    <div class="container">
+        <!-- Branding -->
+        <a href="../../" class="brand">
+            <!--
+              Use your black & white Lexagora logo here.
+              The template uses “light-brand” for dark backgrounds,
+              “dark-brand” for light backgrounds.
+            -->
+            <img alt="Lexagora logo black" src="../../images/logo.png" class="dark-brand bg-logo">
+            <img alt="Lexagora logo black" src="../../images/logo.png" class="light-brand bg-logo">
+        </a>
+        <!-- Mobile Menu Toggle -->
+        <div class="menu"></div>
+    </div>
+</header>
+<!-- ========== END HEADER ========== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container extra-padding">
+    <h1 class=" ">
+        Política de Privacidad
+    </h1>
     <h2>Políticas de Privacidad Centro de Negocios Lexagora</h2>
     <p>El objeto de nuestra política de privacidad se basa en proteger y preservar los derechos de la esfera privada de las personas. La relación con las empresas y, en particular, la interacción en un espacio web, que supone la transferencia de datos personales de los usuarios al sistema de gestión de aquellas. <strong>EL CENTRO DE NEGOCIOS LEXAGORA</strong> pretende establecer unos límites para el uso de los datos personales y de la información en general, marcando las pautas para gestionar dicha información.</p>
     <p>A través de este sitio web no se recaban datos de carácter personal de los usuarios sin su conocimiento, ni se ceden a terceros.</p>
@@ -159,5 +262,18 @@
         </div>
     </div>
 </div>
+
+
+
+
+<!--   Scripts -->
+<script src="../../js/assets/bootstrap.js"></script>
+<script src="../../js/assets/imagesloaded.pkgd.min.js"></script>
+<script src="../../js/assets/validation.js"></script>
+<script src="../../js/assets/masonry.pkgd.min.js"></script>
+<script src="../../modules/tera-slider/tera-slider.js"></script>
+<script src="../../modules/tera-lightbox/tera-lightbox.js"></script>
+<script src="../../js/assets/animsition.js"></script>
+<script src="../../js/functions.js"></script>
 </body>
 </html>
